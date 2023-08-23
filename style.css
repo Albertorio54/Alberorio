@@ -1,0 +1,177 @@
+/*SOP SECTION*/
+.shop{
+    margin-top: 2rem;
+}
+.selection title{
+    font-style: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.Albert{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    border: 1px solid #fd4642;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Permet de positionner l'élément interne */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s; /* Ajout de l'effet de transition */
+}
+.product:hover img {
+    filter: brightness(80%); /* Applique l'effet de changement de couleur au survol */
+}
+
+.product:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s; /* Ajout de la transition d'opacité */
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1rem;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #1d7c35;
+}
+.product {
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.Albert {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 9px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+/* Styles pour les petits écrans (téléphones) */
+@media (max-width: 767px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    
+    .product {
+        padding: 10px;
+    }
+}
+.buy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+h1{
+    margin-top: 2rem;
+
+}
+.paypal.Buttons{
+    style: {
+      layout: 'vertical',
+      color:  'blue',
+      shape:  'rect',
+      label:  'paypal'
+    }
+}
+
+
+
+
+
+
+
+
+
+
